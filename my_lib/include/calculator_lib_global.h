@@ -1,0 +1,12 @@
+#ifndef CALCULATOR_LIB_GLOBAL_H
+#define CALCULATOR_LIB_GLOBAL_H
+
+#include <QtCore/qglobal.h>
+
+#if defined(CALCULATOR_LIB_LIBRARY)
+#  define CALCULATOR_LIB_EXPORT Q_DECL_EXPORT
+#else
+#  define CALCULATOR_LIB_EXPORT Q_DECL_IMPORT
+#endif
+
+#endif // CALCULATOR_LIB_GLOBAL_H
