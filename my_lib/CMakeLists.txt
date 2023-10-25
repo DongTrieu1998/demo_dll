@@ -26,7 +26,7 @@ target_link_libraries(my_lib PRIVATE Qt${QT_VERSION_MAJOR}::Core)
 #install(EXPORT my_export FILE my_lib-config.cmake DESTINATION bin)
 
 install(TARGETS my_lib EXPORT my_lib-export DESTINATION lib)
-export(EXPORT my_lib-export FILE my_libConfig.cmake) # Create SomeLibConfig.cmake
+export(EXPORT my_lib-export FILE Findmy_lib.cmake) # Create SomeLibConfig.cmake
 export(PACKAGE my_lib)
 
 message(bin)
